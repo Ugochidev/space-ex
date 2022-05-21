@@ -53,7 +53,7 @@ const createUser = async (req, res, next) => {
     return errorResMsg(res, 500, { message: error.message });
   }
 };
-// logging in a user
+// login user
 const loginUser = async (req, res, next) => {
   try {
     const { email, password } = req.body;
